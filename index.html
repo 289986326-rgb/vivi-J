@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带状疱疹疫苗惠民活动 - 打一针免一针,立省1598元</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">带状疱疹疫苗惠民活动</div>
+            <button class="cta-button-nav">立即报名</button>
+        </div>
+    </nav>
+
+    <!-- 主展示区 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>惠民活动</h1>
+                    <p class="tagline">打一针免一针,立省1598元</p>
+                    <p class="description">重组带状疱疹疫苗(CHO细胞)惠民接种活动,为50周岁及以上人群提供优惠</p>
+
+                    <div class="price-section">
+                        <div class="price-compare">
+                            <div class="original-price">
+                                <span class="label">原价</span>
+                                <span class="amount">¥3242</span>
+                            </div>
+                            <div class="current-price">
+                                <span class="label">惠民价</span>
+                                <span class="amount">¥1644</span>
+                            </div>
+                        </div>
+                        <p class="save-note">立省 ¥1598</p>
+                    </div>
+
+                    <div class="countdown-container">
+                        <p class="countdown-label">⏰ 活动首针截止倒计时</p>
+                        <div class="countdown-timer">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days">000</span>
+                                <span class="countdown-unit">天</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours">00</span>
+                                <span class="countdown-unit">时</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes">00</span>
+                                <span class="countdown-unit">分</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="seconds">00</span>
+                                <span class="countdown-unit">秒</span>
+                            </div>
+                        </div>
+                        <p class="deadline-note">活动首针截止:2026年6月30日 | 续针截止:2026年12月31日</p>
+                    </div>
+
+                    <button class="cta-button" onclick="scrollToSignup()">立即报名</button>
+                </div>
+                <div class="hero-image">
+                    <img src="WeChat1ab02def0d82bfc74e680d5460cb93fe.jpg" alt="带状疱疹疫苗接种" class="vaccine-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活动对象 -->
+    <section class="target-audience">
+        <div class="container">
+            <h2 class="section-title">活动对象</h2>
+            <div class="audience-card">
+                <div class="audience-item">
+                    <div class="icon">👥</div>
+                    <h3>年龄要求</h3>
+                    <p>年满50周岁及以上的人群<br>接种当日达到惠民方案年龄要求,以周岁计</p>
+                </div>
+                <div class="audience-item">
+                    <div class="icon">💪</div>
+                    <h3>健康状况</h3>
+                    <p>身体健康且无接种禁忌症</p>
+                </div>
+                <div class="audience-item">
+                    <div class="icon">💉</div>
+                    <h3>接种程序</h3>
+                    <p>按0、2月程序接种<br>全程共2剂</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活动政策 -->
+    <section class="policy">
+        <div class="container">
+            <h2 class="section-title">惠民活动政策</h2>
+            <div class="policy-content">
+                <div class="policy-card">
+                    <div class="dose-number">第1剂</div>
+                    <h3>首次接种</h3>
+                    <div class="price-breakdown">
+                        <p class="item">疫苗费用 ¥1598</p>
+                        <p class="item">+ 预防接种服务费 ¥23</p>
+                    </div>
+                    <p class="total">需支付 ¥1621</p>
+                </div>
+                <div class="policy-arrow">→</div>
+                <div class="policy-card highlight">
+                    <div class="dose-number special">第2剂</div>
+                    <h3>续针接种</h3>
+                    <div class="price-breakdown">
+                        <p class="item free">疫苗费用 <span class="badge">免费</span></p>
+                        <p class="item">+ 预防接种服务费 ¥23</p>
+                    </div>
+                    <p class="total special">仅需支付 ¥23</p>
+                </div>
+            </div>
+            <div class="policy-note">
+                <p>💰 参与本次惠民活动的居民享受第2剂次疫苗费减免政策</p>
+                <p>📋 接种第1剂重组带状疱疹疫苗(CHO细胞)时,接种单位收取疫苗费1598元和23元预防接种服务费</p>
+                <p>🎁 接种第2剂重组带状疱疹疫苗(CHO细胞)时,接种单位仅收取23元预防接种服务费</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 接种流程 -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">接种流程</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>在线报名</h3>
+                    <p>填写个人信息,预约接种时间</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>健康评估</h3>
+                    <p>到接种单位进行健康状况评估</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>接种第1剂</h3>
+                    <p>符合条件后接种第1剂疫苗</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>2个月后续针</h3>
+                    <p>按程序接种第2剂(仅收服务费)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活动优势 -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">活动优势</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>费用优惠</h3>
+                    <p>第2剂疫苗费全免,立省1598元,大幅降低接种成本</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>有效预防</h3>
+                    <p>重组带状疱疹疫苗,为中老年人群提供健康保障</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏰</div>
+                    <h3>时间充足</h3>
+                    <p>活动持续时间长,首针截止2026年6月30日</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>流程简便</h3>
+                    <p>在线报名,按程序接种,享受惠民政策</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 报名区 -->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="signup-card">
+                <h2>立即报名参加惠民活动</h2>
+                <p class="signup-subtitle">抓住机会,为您和家人的健康保驾护航</p>
+
+                <div class="price-highlight">
+                    <div class="price-item">
+                        <span class="price-label">原价</span>
+                        <span class="price-original">¥3242</span>
+                    </div>
+                    <div class="price-arrow">→</div>
+                    <div class="price-item">
+                        <span class="price-label">惠民价</span>
+                        <span class="price-current">¥1644</span>
+                    </div>
+                    <div class="price-save">立省 ¥1598</div>
+                </div>
+
+                <form class="signup-form" onsubmit="return handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">姓名 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">年龄 <span class="required">*</span></label>
+                            <input type="number" id="age" name="age" required min="50" placeholder="请输入年龄(50周岁及以上)">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">联系电话 <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="请输入手机号码">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">性别 <span class="required">*</span></label>
+                            <select id="gender" name="gender" required>
+                                <option value="">请选择</option>
+                                <option value="male">男</option>
+                                <option value="female">女</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="address">联系地址</label>
+                        <input type="text" id="address" name="address" placeholder="请输入您的联系地址">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>
+                            <input type="checkbox" name="health" required>
+                            我确认身体健康且无接种禁忌症
+                        </label>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            我已阅读并同意"知情、同意、自愿、自费"的活动原则
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-button-large">提交报名</button>
+                    <p class="form-note">提交后,工作人员将在1-2个工作日内与您联系确认</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 免责声明 -->
+    <section class="disclaimer">
+        <div class="container">
+            <div class="disclaimer-content">
+                <p>⚠️ 重要提示</p>
+                <p>所有受种者均须按照"知情、同意、自愿、自费"的原则参加本次活动</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 带状疱疹疫苗惠民活动. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSignup() {
+            document.getElementById('signup').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 导航栏报名按钮
+        document.querySelector('.cta-button-nav').addEventListener('click', scrollToSignup);
+
+        // 表单提交处理
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            // 这里可以添加实际的提交逻辑,例如发送到服务器
+            console.log('提交的报名信息:', data);
+
+            // 显示成功提示
+            alert('报名成功!工作人员将在1-2个工作日内与您联系确认。');
+
+            // 重置表单
+            event.target.reset();
+
+            return false;
+        }
+
+        // 倒计时功能 - 计算到2026年6月30日的倒计时
+        function startCountdown() {
+            const endDate = new Date('2026-06-30T23:59:59').getTime();
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+
+                if (distance < 0) {
+                    document.getElementById('days').textContent = '000';
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(3, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        // 页面加载时启动倒计时
+        startCountdown();
+    </script>
+</body>
+</html>
