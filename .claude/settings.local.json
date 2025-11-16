@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n更新配色方案为高级深蓝紫+金色主题\n\n- 主色调改为深蓝紫色渐变 (#4f46e5 → #7c3aed)\n- 按钮改为金色渐变 (#f59e0b → #d97706)\n- 导航栏/页脚使用深灰色渐变\n- 背景采用米白色配淡紫色渐变\n- 优化所有卡片和交互效果的配色\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(chmod:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n添加部署和截图工具文档\n\n- DEPLOY.md: 详细的部署指南（GitHub Pages/Vercel/Netlify）\n- SCREENSHOT.md: 多种截图方法说明\n- generate-screenshot.sh: 一键生成长图脚本\n- README.md: 项目总览和快速开始指南\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(./generate-screenshot.sh:*)"
     ],
     "deny": [],
     "ask": []

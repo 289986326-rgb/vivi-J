@@ -11,7 +11,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">带状疱疹疫苗惠民活动</div>
-            <button class="cta-button-nav">立即报名</button>
+            <button class="cta-button-nav" onclick="openSignupForm()">立即报名</button>
         </div>
     </nav>
 
@@ -64,7 +64,7 @@
                         <p class="deadline-note">活动首针截止:2026年6月30日 | 续针截止:2026年12月31日</p>
                     </div>
 
-                    <button class="cta-button" onclick="scrollToSignup()">立即报名</button>
+                    <button class="cta-button" onclick="openSignupForm()">立即报名</button>
                 </div>
                 <div class="hero-image">
                     <img src="WeChat1ab02def0d82bfc74e680d5460cb93fe.jpg" alt="带状疱疹疫苗接种" class="vaccine-image">
@@ -188,7 +188,7 @@
         </div>
     </section>
 
-    <!-- 报名区 -->
+    <!-- 报名区 - 跳转到外部表单 -->
     <section class="signup-section" id="signup">
         <div class="container">
             <div class="signup-card">
@@ -208,55 +208,19 @@
                     <div class="price-save">立省 ¥1598</div>
                 </div>
 
-                <form class="signup-form" onsubmit="return handleSubmit(event)">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">姓名 <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
-                        </div>
-                        <div class="form-group">
-                            <label for="age">年龄 <span class="required">*</span></label>
-                            <input type="number" id="age" name="age" required min="50" placeholder="请输入年龄(50周岁及以上)">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">联系电话 <span class="required">*</span></label>
-                            <input type="tel" id="phone" name="phone" required placeholder="请输入手机号码">
-                        </div>
-                        <div class="form-group">
-                            <label for="gender">性别 <span class="required">*</span></label>
-                            <select id="gender" name="gender" required>
-                                <option value="">请选择</option>
-                                <option value="male">男</option>
-                                <option value="female">女</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="address">联系地址</label>
-                        <input type="text" id="address" name="address" placeholder="请输入您的联系地址">
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label>
-                            <input type="checkbox" name="health" required>
-                            我确认身体健康且无接种禁忌症
-                        </label>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label>
-                            <input type="checkbox" name="consent" required>
-                            我已阅读并同意"知情、同意、自愿、自费"的活动原则
-                        </label>
-                    </div>
-
-                    <button type="submit" class="cta-button-large">提交报名</button>
-                    <p class="form-note">提交后,工作人员将在1-2个工作日内与您联系确认</p>
-                </form>
+                <!-- 跳转按钮 -->
+                <div style="text-align: center; padding: 3rem 0;">
+                    <p style="font-size: 1.3rem; color: #666; margin-bottom: 2rem;">
+                        点击下方按钮填写报名信息<br>
+                        工作人员将在1-2个工作日内与您联系确认
+                    </p>
+                    <button class="cta-button-large" onclick="openSignupForm()">
+                        📝 填写报名表
+                    </button>
+                    <p class="form-note" style="margin-top: 1.5rem;">
+                        ✅ 安全保密 &nbsp;|&nbsp; ✅ 快速响应 &nbsp;|&nbsp; ✅ 专业服务
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -279,30 +243,16 @@
     </footer>
 
     <script>
-        function scrollToSignup() {
-            document.getElementById('signup').scrollIntoView({ behavior: 'smooth' });
-        }
+        // 表单链接
+        const FORM_URL = 'https://k4t5xbcf.jsjform.com/f/Nq9lq1';
 
-        // 导航栏报名按钮
-        document.querySelector('.cta-button-nav').addEventListener('click', scrollToSignup);
+        // 打开报名表单
+        function openSignupForm() {
+            // 在新窗口打开表单
+            window.open(FORM_URL, '_blank');
 
-        // 表单提交处理
-        function handleSubmit(event) {
-            event.preventDefault();
-
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData.entries());
-
-            // 这里可以添加实际的提交逻辑,例如发送到服务器
-            console.log('提交的报名信息:', data);
-
-            // 显示成功提示
-            alert('报名成功!工作人员将在1-2个工作日内与您联系确认。');
-
-            // 重置表单
-            event.target.reset();
-
-            return false;
+            // 或者在当前页面打开（取消下面这行的注释，注释掉上面那行）
+            // window.location.href = FORM_URL;
         }
 
         // 倒计时功能 - 计算到2026年6月30日的倒计时
